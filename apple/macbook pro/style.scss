@@ -1,0 +1,129 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:before,
+:after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    background: url(../img/science_bg_2x.jpg);
+    background-size: cover;
+}
+
+$mac-w: 725px;
+$mac-h: 520px;
+$inner-w: 670px;
+$inner-h: 428px;
+$camera-w: 7px;
+$screen-margin: 30px;
+$bottom-w: 888px;
+
+.macbook {
+    width: $mac-w;
+    height: $mac-h;
+    margin: 50px auto;
+    background: #000;
+    border-radius: 30px;
+    border: 2px solid #D2D3D5;
+    padding: 1px;
+    position: relative;
+}
+
+.screen {
+    background: transparent;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #323232;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-screen {
+    width: $inner-w;
+    height: $inner-h;
+    background: url(../img/mavericks.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: $screen-margin auto $screen-margin;
+}
+
+.highlight {
+    position: absolute;
+    right: -50px;
+    top: 0;
+    height: 0;
+    margin: -1px -1px -1px 0;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 15px;
+    width: 50%;
+    border-top: ($inner-h + 2 * $screen-margin) solid rgba(255, 255, 255, 0.12);
+    border-left: 210px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.camera {
+    position: absolute;
+    width: $camera-w;
+    height: $camera-w;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3) inset;
+    top: $screen-margin/2;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: - ($camera-w)/2;
+    margin-top: - ($camera-w)/2;
+}
+
+.bottom {
+    position: absolute;
+    width: $bottom-w;
+    height: 28px;
+    left: - ($bottom-w - $mac-w)/2;
+    bottom: -14px;
+    background: #F2F2F2;
+    border-bottom-left-radius: 35px 12px;
+    border-bottom-right-radius: 35px 12px;
+    box-shadow: -3px -5px 7px 3px rgba(35, 35, 35, 0.35) inset;
+}
+
+.open {
+    width: 125px;
+    height: 10px;
+    margin: 0 auto;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    box-shadow: -1px -1px 5px 1px rgba(0, 0, 0, 0.35) inset;
+}

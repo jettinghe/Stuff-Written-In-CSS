@@ -1,0 +1,204 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+:before,
+:after {
+  content: '';
+  display: block;
+  position: absolute; }
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  cursor: default;
+  background: url(../img/science_bg_2x.jpg);
+  background-size: cover; }
+
+.macbook {
+  width: 725px;
+  height: 520px;
+  margin: 50px auto;
+  background: #000;
+  border-radius: 30px;
+  border: 2px solid #D2D3D5;
+  padding: 1px;
+  position: relative; }
+
+.imac {
+  position: relative;
+  width: 725px;
+  margin: 100px auto; }
+
+.imac-top {
+  width: 725px;
+  height: 460px;
+  background: #000;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  /*padding: 1px;*/
+  position: relative;
+  overflow: hidden; }
+
+.screen {
+  background: transparent;
+  border-top-right-radius: 28px;
+  border-top-left-radius: 28px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid #323232;
+  position: relative;
+  overflow: hidden; }
+
+.inner-screen,
+.imac-inner-screen {
+  width: 670px;
+  height: 428px;
+  background: url(../img/mavericks.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 30px auto 30px; }
+
+.imac-inner-screen {
+  height: 398px;
+  margin-bottom: 0; }
+
+.imac-logo {
+  position: relative;
+  /*bottom: -60px;*/
+  /*left: 0;*/
+  height: 60px;
+  padding-top: 10px;
+  width: 725px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: #DFE0E2;
+  background: -moz-linear-gradient(left, #dadada 0%, #f6f6f6 47%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #dadada), color-stop(47%, #f6f6f6), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #dadada 0%, #f6f6f6 47%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #dadada 0%, #f6f6f6 47%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #dadada 0%, #f6f6f6 47%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #dadada 0%, #f6f6f6 47%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dadada', endColorstr='#ffffff',GradientType=1 );
+  /* IE6-9 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.imac-bottom-1 {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  bottom: -80px;
+  margin-left: -85px;
+  width: 170px;
+  height: 0;
+  border-bottom: 100px solid #F5F5F7;
+  /*background: #F5F5F7;*/
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  box-shadow: -3px -5px 7px 3px rgba(35, 35, 35, 0.35) inset; }
+
+.imac-bottom-2 {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  bottom: -80px;
+  margin-left: -110px;
+  width: 220px;
+  height: 0;
+  border-bottom: 30px solid #F5F5F7;
+  /*background: #F5F5F7;*/
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent; }
+
+.imac-bottom-2:after {
+  position: absolute;
+  height: 1px;
+  width: 166px;
+  background: rgba(0, 0, 0, 0.1);
+  left: 50%;
+  top: 19px;
+  margin-left: -83px; }
+
+.imac-bottom-3 {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  bottom: -83px;
+  margin-left: -110px;
+  width: 220px;
+  height: 3px;
+  background: #F5F5F7;
+  box-shadow: 0 1px 2px rgba(35, 35, 35, 0.35) inset;
+  border-radius: 2px; }
+
+.highlight {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  height: 0;
+  margin: -1px -1px -1px 0;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 15px;
+  width: 50%;
+  border-top: 488px solid rgba(255, 255, 255, 0.12);
+  border-left: 210px solid transparent;
+  border-right: 50px solid transparent; }
+
+.camera {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3) inset;
+  top: 15px;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -3.5px;
+  margin-top: -3.5px; }
+
+.bottom {
+  position: absolute;
+  width: 888px;
+  height: 28px;
+  left: -81.5px;
+  bottom: -14px;
+  background: #F2F2F2;
+  border-bottom-left-radius: 35px 12px;
+  border-bottom-right-radius: 35px 12px;
+  box-shadow: -3px -5px 7px 3px rgba(35, 35, 35, 0.35) inset; }
+
+.open {
+  width: 125px;
+  height: 10px;
+  margin: 0 auto;
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  box-shadow: -1px -1px 5px 1px rgba(0, 0, 0, 0.35) inset; }
